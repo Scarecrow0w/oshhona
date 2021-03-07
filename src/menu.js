@@ -1,8 +1,7 @@
 const mainmenu = {
 
    firstCourses: [
-      {
-         isActive: false, 
+      {          
          title: 'Шурпа',
          weight: '300 г',
          description: 'Баранина, картофель, морковь, лук, соль, специи',
@@ -23,8 +22,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Лагман',
          weight: '300 г',
          description: 'Говядина, лапша из муки высшего сорта, стручковая фасоль, тёртая морковь, масло растительное, лук, томат, сельдерей, зелень, соль, специи',
@@ -45,8 +43,7 @@ const mainmenu = {
             },
          ]   
       },
-      {
-         isActive: false, 
+      {          
          title: 'Мастава',
          weight: '300 г',
          description: 'Говядина, рис, тёртая морковь, стручковая фасоль, лук, томат, сельдерей, зелень, масло растительное, соль, специи',
@@ -67,8 +64,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Джавари',
          weight: '300 г',
          description: 'Говядина, бобовые разного вида, лук, морковь, пекинская капуста, растительное масло, зелень, соль, специи',
@@ -92,8 +88,7 @@ const mainmenu = {
    ],
 
    secondCourses: [
-      {
-         isActive: false, 
+      {          
          title: 'Плов',
          weight: '350 г',
          description: 'Говядина, рис, морковь, лук, масло растительное, масло загири, чеснок, приправы',
@@ -114,8 +109,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Казан-кабоб',
          weight: '250 г',
          description: 'Говядина, картофель, лук, масло растительное, приправы',
@@ -136,8 +130,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Мясная сковородка',
          weight: '200 г',
          description: 'Говядина, лук, масло растительное, душистый перец, приправы',
@@ -164,8 +157,7 @@ const mainmenu = {
             },    
          ]        
       },
-      {
-         isActive: false, 
+      {          
          title: 'Манты',
          weight: '250 г',
          description: '5 штук (можно добавить в опциях), говядина, тесто, лук, масло растительное',
@@ -192,8 +184,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Самса',
          weight: '250 г',
          description: 'С картофелем и говядиной / с говядиной / с тыквой',
@@ -223,8 +214,7 @@ const mainmenu = {
    ],
 
    bbq: [
-      {
-         isActive: false, 
+      {          
          title: 'Люля-кебаб',
          weight: '120 г',
          description: 'Говядина, лук, хлеб, говяжий жир, специи',
@@ -245,8 +235,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Шашлык из говядины',
          weight: '120 г',
          description: 'Кусочки говядина, специи',
@@ -267,8 +256,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Шашлык из баранины',
          weight: '120 г',
          description: 'Кусочки баранины, специи',
@@ -289,8 +277,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Овощи на мангале',
          description: 'Описание блюда',
          price: 100,
@@ -299,8 +286,7 @@ const mainmenu = {
    ],
 
    salads: [
-      {
-         isActive: false, 
+      {          
          title: 'Овощная нарезка',
          weight: '200 г',
          description: 'Огурцы, помидоры, лук, болгарский перец, лимон',
@@ -321,8 +307,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Шакароб',
          weight: '100 г',
          description: 'Помидоры с луком',
@@ -343,8 +328,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Салат зелёный',
          weight: '200 г',
          description: 'Помидоры, огурцы, перец болгарский, зелень',
@@ -365,8 +349,7 @@ const mainmenu = {
             },
          ]
       },
-      {
-         isActive: false, 
+      {          
          title: 'Соленья ассорти',
          weight: '200 г',
          description: 'Огурцы соленые, помидоры соленые, квашеная капуста, соленый стручковый перец',
@@ -390,56 +373,49 @@ const mainmenu = {
    ],
 
    drinks: [
-      {
-      isActive: false, 
+      {       
          title: 'Кофе',
          weight: '300 мл',
          description: 'Черный кофе. Можно добавить сливки',
          price: 50,
          imgPath: './src/assets/img/icons/serving-dish.png',
       },
-      {
-         isActive: false, 
+      {          
          title: 'Чай',
          weight: '300 мл',
          description: 'Чёрный / зелёный',
          price: 30,
          imgPath: './src/assets/img/icons/serving-dish.png',
       },
-      {
-         isActive: false, 
+      {          
          title: 'BonAqua',
          weight: '500 мл',
          description: 'Негазированная вода',
          price: 50,
          imgPath: './src/assets/img/icons/serving-dish.png',
       },
-      {
-         isActive: false, 
+      {          
          title: 'Лимонад',
          weight: '500 мл',
          description: 'Лимонад в ассортименте',
          price: 50,
          imgPath: './src/assets/img/icons/serving-dish.png',
       },
-      {
-         isActive: false, 
+      {          
          title: 'Компот',
          weight: '200 / 1000 мл',
          description: 'Компот из сухофруктов',
          price: 20,
          imgPath: './src/assets/img/icons/serving-dish.png',
       },
-      {
-         isActive: false, 
+      {          
          title: 'Dausuz',
          weight: '500 мл',
          description: 'Вода',
          price: 50,
          imgPath: './src/assets/img/icons/serving-dish.png',
       },
-      {
-         isActive: false, 
+      {          
          title: 'Домашний кефир',
          weight: '200 мл',
          description: 'Описание блюда',
