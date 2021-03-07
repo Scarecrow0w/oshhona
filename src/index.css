@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 1024px) {
+  header {
+    height: 80px;
+  }  
+  nav {
+    height: 80px;
+  }
+  .courses-container {
+    margin-left: 243px;
+  }
+}
+
+@media (min-width: 1536px) {
+  #cart {
+    width: calc(33.333333% - 243px);
+    height: calc(100vh - 80px);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  #cart {
+    width: calc(41.666667% - 243px);
+    height: calc(100vh - 80px);
+  }
+}
+
+.bgosh {
+  background: #00a15e url('./src/assets/img/pattern.png')!important;
+}
+
+.active-category {
+  background: #00a15e url('./src/assets/img/pattern.png')!important;
+  color: white;
+  margin-left: 15px;
+}
+
+main {
+  background: #f0efed;
+  /* height: 999999999px; */
+}
+
+.iconimg {
+  height: 30px;
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  transition: all 0.25s;
+}
+ 
+.hamburger__top-bun,
+.hamburger__bottom-bun {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger:hover [class*="-bun"] {
+  background: #fff;
+}
+
+.hamburger__top-bun {
+  transform: translateY(-5px);
+}
+
+.hamburger__bottom-bun {
+  transform: translateY(3px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(-1px);
+}
+
+.open .hamburger__top-bun {
+  transform:
+    rotate(45deg)
+    translateY(0px);
+}
+
+.open .hamburger__bottom-bun {
+  transform:
+    rotate(-45deg)
+    translateY(0px);
+}
+
+.category {
+  transition: all ease 0.25s;
+  background: url('./src/assets/img/pattern.png')
+}
+
+.card {
+  width: 500px;
+  height: 250px;
+}
+
+.card-img, .card-img img {
+  height: 250px;
+  width: 250px;
+}
