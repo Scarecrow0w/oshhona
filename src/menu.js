@@ -1,6 +1,6 @@
 const mainmenu = {
 
-   firstCourses: [
+   0: [
       {          
          title: 'Шурпа',
          weight: '300 г',
@@ -87,7 +87,7 @@ const mainmenu = {
       }
    ],
 
-   secondCourses: [
+   1: [
       {          
          title: 'Плов',
          weight: '350 г',
@@ -213,7 +213,7 @@ const mainmenu = {
       }
    ],
 
-   bbq: [
+   2: [
       {          
          title: 'Люля-кебаб',
          weight: '120 г',
@@ -238,7 +238,7 @@ const mainmenu = {
       {          
          title: 'Шашлык из говядины',
          weight: '120 г',
-         description: 'Кусочки говядина, специи',
+         description: 'Кусочки говядины, специи',
          price: 145,
          imgPath: './src/assets/img/menu/bbqgovyadina.jpg',
          options: [
@@ -285,7 +285,7 @@ const mainmenu = {
       }
    ],
 
-   salads: [
+   3: [
       {          
          title: 'Овощная нарезка',
          weight: '200 г',
@@ -372,7 +372,7 @@ const mainmenu = {
       }
    ],
 
-   drinks: [
+   4: [
       {       
          title: 'Кофе',
          weight: '300 мл',

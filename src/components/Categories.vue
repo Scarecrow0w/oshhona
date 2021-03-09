@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-between h-72 lg:fixed lg:top-1/3 lg:left-1 categories lg:h-96">
+    <div class="flex flex-col justify-between h-72 lg:fixed lg:top-1/3 lg:left-4 categories lg:h-96">
             <div
             v-for="category in categories"
             :key="category.name"

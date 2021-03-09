@@ -1,9 +1,10 @@
 <template>
-    <div 
-    v-for="(category, index) in menu" 
-    :key="index"
-    class="flex flex-col border lg:w-7/12 2xl:w-2/3 courses-container px-7">
-        <h1 class="mt-6 text-5xl font-medium text-center">{{ menuTitle }}</h1>
+    <div class="border-l lg:w-7/12 2xl:w-2/3 xl:ml-60">
+        <div 
+        v-for="(category, index) in menu" 
+        :key="index"
+        class="flex flex-col border-b-2 border-dashed courses-container px-7">
+        <h1 class="mt-6 text-6xl text-center">{{ categories[index] }}</h1>
         <div class="flex flex-col flex-wrap items-center justify-between w-full mt-16 2xl:flex-row cards-container">
             <div
             v-for="(dish, idx) in category" :key="idx"
@@ -82,7 +83,6 @@
                                 class="text-3xl rounded-full cursor-pointer text-oshb hover:text-oshd fas fa-plus-circle"></i>
                                 <button
                                 v-else
-                                @click="createPosition(dish)" 
                                 class="w-24 h-8 font-medium text-center text-white border rounded-xl bg-oshb">Добавить</button>
                             </transition>
                         </div>    
@@ -90,6 +90,7 @@
                 </div> 
             </div>    
         </div>
+    </div>
     </div>
 </template>
 
@@ -108,6 +109,7 @@ export default {
             menu: menulist,
             order: order,
             servingsNumber: 1,
+            categories: ['Первые блюда', 'Вторые блюда', 'Мангал', 'Салаты', 'Напитки'],
             position: {
                 title: [],
                 options: [],
@@ -164,5 +166,5 @@ defineProps({
         transform-origin: 50% 50%;
         transform: scaleY(0) translateZ(0);
         opacity: 0;
-    }
+    }  
 </style>
