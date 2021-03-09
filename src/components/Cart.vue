@@ -1,8 +1,8 @@
 <template>
     <div id="cart" class="right-0 flex flex-col bg-white rounded-lg shadow-xl hover:shadow-2xl lg:fixed ">
         <div class="flex flex-col h-full">
-            <h3 class="mt-5 text-2xl font-medium text-center">Мой заказ</h3>
-            <div class="flex h-full p-2 overflow-y-auto">
+            <h3 class="mt-5 text-2xl text-center">Мой заказ</h3>
+            <div class="flex h-full p-2 mt-2 overflow-y-auto">
                 <div class="flex flex-col w-full overflow-y-auto">
                     <div class="flex w-full px-1 mb-5">
                         <div class="flex flex-col">
