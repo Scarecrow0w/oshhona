@@ -77,7 +77,7 @@
                         <div class="flex items-center justify-end lg:w-1/2">
                             <transition name="fade" mode="out-in">
                                 <i
-                                v-if="!dish.isActive && dish.options.length > 0" 
+                                v-if="!dish.isActive && dish.options" 
                                 @click="dish.isActive = !dish.isActive"
                                 class="text-3xl rounded-full cursor-pointer text-oshb hover:text-oshd fas fa-plus-circle"></i>
                                 <button
