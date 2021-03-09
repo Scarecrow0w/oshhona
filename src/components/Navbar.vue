@@ -9,10 +9,10 @@
         </button>
       </div>
       <div id="menu" class="flex-col items-center self-end justify-center hidden w-full h-full py-1 pb-4 md:justify-start lg:ml-11 lg:self-center lg:flex lg:flex-row lg:py-0 lg:pb-0">
-        <a title="Первые блюда" class="py-2 text-lg font-bold no-underline hover:text-green-400 lg:w-auto lg:pr-4 lg:py-1 lg:pt-2" href="#P3L">Меню</a>
-        <a title="Блюда на мангале" class="py-2 text-lg font-bold no-underline hover:text-green-400 lg:w-auto lg:px-4 lg:py-1 lg:pt-2" href="#P3L">Бронь банкета</a>
-        <a title="Салаты" class="py-2 text-lg font-bold no-underline hover:text-green-400 lg:w-auto lg:px-4 lg:py-1 lg:pt-2" href="#P3L">Зона доставки</a>
-        <a title="Напитки" class="py-2 text-lg font-bold no-underline hover:text-green-400 lg:w-auto lg:px-4 lg:py-1 lg:pt-2" href="#P3L">Контакты</a>  
+        <a title="Первые блюда" class="py-2 text-lg font-medium no-underline hover:text-green-400 lg:w-auto lg:pr-4 lg:py-1 lg:pt-2" href="#P3L">Меню</a>
+        <a title="Блюда на мангале" class="py-2 text-lg font-medium no-underline hover:text-green-400 lg:w-auto lg:px-4 lg:py-1 lg:pt-2" href="#P3L">Бронь банкета</a>
+        <a title="Салаты" class="py-2 text-lg font-medium no-underline hover:text-green-400 lg:w-auto lg:px-4 lg:py-1 lg:pt-2" href="#P3L">Зона доставки</a>
+        <a title="Напитки" class="py-2 text-lg font-medium no-underline hover:text-green-400 lg:w-auto lg:px-4 lg:py-1 lg:pt-2" href="#P3L">Контакты</a>  
         <a title="Номер телефона" class="py-2 font-medium no-underline lg:ml-auto text-md hover:text-green-400 lg:w-auto lg:px-4 lg:py-1 lg:pt-2" href="tel:+79289008706">+7 (928) 900-87-06</a>              
       </div>    
     </nav>

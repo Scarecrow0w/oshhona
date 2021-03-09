@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="items-center hidden w-3/4 lg:flex">                    
-                    <span class="ml-2 font-semibold group-hover:text-white">{{ category.title }}</span>
+                    <span class="ml-2 font-medium group-hover:text-white">{{ category.title }}</span>
                 </div>
             </div>
         </div>
