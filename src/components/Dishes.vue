@@ -65,7 +65,7 @@
                         </div>
                     </transition>     
                 </div>
-                <div class="flex flex-col flex-1 h-full p-1 pl-4">
+                <div class="flex flex-col flex-1 h-full p-2 pl-4">
                     <h2 class="text-4xl font-light">{{ dish.title }}</h2>
                     <span class="h-24 overflow-y-auto text-gray-400 text-md mt-7">{{ dish.description }}</span>
                     <span class="mt-1 mb-auto text-gray-400 text-md">{{ dish.weight }}</span>
@@ -74,15 +74,17 @@
                             <span class="text-xl font-medium">{{ dish.price }}</span>                             
                             <i class="ml-1 text-sm fas fa-ruble-sign"></i>
                         </div> 
-                        <div class="flex items-center justify-end lg:w-1/2">
+                        <div class="flex items-center justify-end card-buttons lg:w-1/2">
                             <transition name="fade" mode="out-in">
-                                <i
+                                <button
                                 v-if="!dish.isActive && dish.options" 
                                 @click="dish.isActive = !dish.isActive"
-                                class="text-3xl rounded-full cursor-pointer text-oshb hover:text-oshd fas fa-plus-circle"></i>
+                                class="rounded-full shadow-md cursor-pointer focus:outline-none">
+                                <img src="../assets/img/icons/plus.png" alt="plus" class="w-8 h-8">
+                                </button>
                                 <button
                                 v-else
-                                class="w-24 h-8 font-medium text-center text-white border rounded-xl bg-oshb">Добавить</button>
+                                class="w-24 h-8 font-medium text-center text-white shadow-md rounded-xl bg-gradient-to-l from-green-500 to-oshd focus:outline-none">Добавить</button>
                             </transition>
                         </div>    
                     </div>
@@ -95,58 +97,28 @@
 
 <script>
 import menulist from '/src/menu'
-import order from '/src/order'
 
 export default {
     name: 'Dishes',
 
-    props: {     
-    },
-
     data() {
         return {
             menu: menulist,
-            order: order,
             servingsNumber: 1,
             categories: ['Первые блюда', 'Вторые блюда', 'Мангал', 'Салаты', 'Напитки'],
-            position: {
-                title: [],
-                options: [],
-                value: [],
-            }
         }
-    },
-
-    methods: {
-        createPosition(item) {},
-
-        addToCart() {}
-    },
-
-    mounted() {
-        
-    },
+    }
 }
 
 
 </script>
 
-<script setup>
-import { defineProps, reactive } from 'vue'
-
-defineProps({
-  menuTitle: String,
-})
-
-</script>
-
 <style scoped>
-    .fade-enter-active,
-    .fade-leave-active {
+    .fade-enter-active, .fade-leave-active {
         transition: opacity 0.25s ease;
     }
-    .fade-enter-from,
-    .fade-leave-to {
+
+    .fade-enter-from, .fade-leave-to {
         opacity: 0;
     }
 
@@ -160,8 +132,7 @@ defineProps({
         transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
     }
 
-    .flip-enter-from,
-    .flip-leave-to {
+    .flip-enter-from, .flip-leave-to {
         transform-origin: 50% 50%;
         transform: scaleY(0) translateZ(0);
         opacity: 0;

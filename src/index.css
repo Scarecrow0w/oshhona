@@ -60,7 +60,7 @@
 .active-category {
   background: #00a15e url('./src/assets/img/pattern.png')!important;
   color: white;
-  transform: scale(1.1);
+  transform: scale(1.075);
 }
 
 main {
@@ -125,6 +125,16 @@ main {
 .category {
   transition: all ease 0.4s;
   background: url('./src/assets/img/pattern.png')
+}
+
+.card-buttons button:hover {
+  transform: scale(1.075);
+  transform-origin: center center;
+}
+
+.card-buttons button {
+  transition: all ease 0.4s;
+  transform-origin: center center;
 }
 
 .card {

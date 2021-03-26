@@ -1,24 +1,24 @@
 <template>
     <div class="flex flex-col justify-between h-72 lg:fixed lg:top-1/3 lg:left-4 categories lg:h-96">
-            <div
-            v-for="category in categories"
-            :key="category.name"
-            :id="category.name"
-            :class="{'active-category': activeCategory === category.name}"
-            @mouseover="activeCategory = category.name"
-            @mouseleave="activeCategory = ''"  
-            :title="category.title"     
-            class="flex border rounded-full shadow-md cursor-pointer border-oshb lg:shadow w-11 h-11 lg:px-2 lg:w-52 group lg:rounded-2xl category lg:h-14">
-                <div class="flex items-center justify-center w-full lg:w-1/4">
-                    <div class="flex items-center justify-center w-full h-full text-4xl bg-transparent rounded-full lg:w-10 lg:h-10 lg:bg-white">
-                        <img class="iconimg" :src="category.iconPath" alt="icon">
-                    </div>
-                </div>
-                <div class="items-center hidden w-3/4 lg:flex">                    
-                    <span class="ml-2 font-medium group-hover:text-white">{{ category.title }}</span>
+        <div
+        v-for="category in categories"
+        :key="category.name"
+        :id="category.name"
+        :class="{'active-category': activeCategory === category.name}"
+        @mouseover="activeCategory = category.name"
+        @mouseleave="activeCategory = ''"  
+        :title="category.title" 
+        class="flex border rounded-full shadow-md cursor-pointer border-oshb lg:shadow w-11 h-11 lg:px-2 lg:w-52 group lg:rounded-2xl category lg:h-14">
+            <div class="flex items-center justify-center w-full lg:w-1/4">
+                <div class="flex items-center justify-center w-full h-full text-4xl bg-transparent rounded-full lg:w-10 lg:h-10 lg:bg-white">
+                    <img class="iconimg" :src="category.iconPath" alt="icon">
                 </div>
             </div>
+            <div class="items-center hidden w-3/4 lg:flex">                    
+                <span class="ml-2 font-medium group-hover:text-white">{{ category.title }}</span>
+            </div>
         </div>
+    </div>
 </template>
 
 
@@ -69,8 +69,6 @@ export default {
       }
     },
 
-    methods: {
-        
-    },
+    methods: {},
 }    
 </script>
