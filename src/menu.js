@@ -5,7 +5,7 @@ const mainmenu = {
          title: 'Шурпа',
          weight: '300 г',
          description: 'Баранина, картофель, морковь, лук, соль, специи',
-         price: 220,
+         price: 180,
          imgPath: './src/assets/img/menu/shurpa.jpg',
          options: [
             {
@@ -26,7 +26,7 @@ const mainmenu = {
          title: 'Лагман',
          weight: '300 г',
          description: 'Говядина, лапша из муки высшего сорта, стручковая фасоль, тёртая морковь, масло растительное, лук, томат, сельдерей, зелень, соль, специи',
-         price: 220,
+         price: 180,
          imgPath: './src/assets/img/menu/lagman.jpg',
          options: [
             {
@@ -47,7 +47,7 @@ const mainmenu = {
          title: 'Мастава',
          weight: '300 г',
          description: 'Говядина, рис, тёртая морковь, стручковая фасоль, лук, томат, сельдерей, зелень, масло растительное, соль, специи',
-         price: 220,
+         price: 180,
          imgPath: './src/assets/img/menu/mastava.jpg',
          options: [
             {
@@ -68,7 +68,28 @@ const mainmenu = {
          title: 'Джавари',
          weight: '300 г',
          description: 'Говядина, бобовые разного вида, лук, морковь, пекинская капуста, растительное масло, зелень, соль, специи',
-         price: 220,
+         price: 180,
+         imgPath: './src/assets/img/icons/serving-dish.png',
+         options: [
+            {
+               title: 'Лепёшка',
+               price: 40,
+               count: 0,
+               value: 0,
+            },
+            {
+               title: 'Лепёшка (половина)',
+               price: 20,
+               count: 0,
+               value: 0,
+            },
+         ]
+      },
+      {          
+         title: 'Суп с пельменями',
+         weight: '300 г',
+         description: 'Суп с пельменями (8 шт) собственного производства (говядина)',
+         price: 180,
          imgPath: './src/assets/img/icons/serving-dish.png',
          options: [
             {
@@ -90,9 +111,9 @@ const mainmenu = {
    1: [
       {          
          title: 'Плов',
-         weight: '350 г',
+         weight: '400 г',
          description: 'Говядина, рис, морковь, лук, масло растительное, масло загири, чеснок, приправы',
-         price: 220,
+         price: 180,
          imgPath: './src/assets/img/icons/serving-dish.png',
          options: [
             {
@@ -111,9 +132,9 @@ const mainmenu = {
       },
       {          
          title: 'Казан-кабоб',
-         weight: '250 г',
+         weight: '200 г',
          description: 'Говядина, картофель, лук, масло растительное, приправы',
-         price: 310,
+         price: 250,
          imgPath: './src/assets/img/menu/kazankabob.jpg',
          options: [
             {
@@ -134,7 +155,7 @@ const mainmenu = {
          title: 'Мясная сковородка',
          weight: '200 г',
          description: 'Говядина, лук, масло растительное, душистый перец, приправы',
-         price: 220,
+         price: 200,
          imgPath: './src/assets/img/menu/skovorodka.jpg',
          options: [
             {
@@ -159,14 +180,41 @@ const mainmenu = {
       },
       {          
          title: 'Манты',
-         weight: '250 г',
+         weight: '200 г',
          description: '5 штук (можно добавить в опциях), говядина, тесто, лук, масло растительное',
-         price: 220,
+         price: 180,
          imgPath: './src/assets/img/menu/manti.jpg',
          options: [
             {
                title: 'Добавить манты',
-               price: 44,
+               price: 36,
+               count: 0,
+               value: 0,
+            },
+            {
+               title: 'Лепёшка',
+               price: 40,
+               count: 0,
+               value: 0,
+            },
+            {
+               title: 'Лепёшка (половина)',
+               price: 20,
+               count: 0,
+               value: 0,
+            },
+         ]
+      },
+      {          
+         title: 'Пельмени',
+         weight: '200 г',
+         description: '15 штук (можно добавить в опциях), говядина, тесто, лук, масло растительное',
+         price: 200,
+         imgPath: './src/assets/img/icons/serving-dish.png',
+         options: [
+            {
+               title: 'Добавить пельмени',
+               price: 15,
                count: 0,
                value: 0,
             },
@@ -186,26 +234,26 @@ const mainmenu = {
       },
       {          
          title: 'Самса',
-         weight: '250 г',
+         weight: '200 г',
          description: 'С картофелем и говядиной / с говядиной / с тыквой',
-         price: 80,
+         price: 70,
          imgPath: './src/assets/img/menu/samsa.jpg',
          options: [
             {
                title: 'С картофелем и говядиной',
-               price: 100,
+               price: 70,
                count: 0,
                value: 0,
             },
             {
                title: 'С говядиной',
-               price: 100,
+               price: 70,
                count: 0,
                value: 0,
             },
             {
                title: 'С тыквой',
-               price: 80,
+               price: 70,
                count: 0,
                value: 0,
             }
@@ -218,7 +266,27 @@ const mainmenu = {
          title: 'Люля-кебаб',
          weight: '120 г',
          description: 'Говядина, лук, хлеб, говяжий жир, специи',
-         price: 120,
+         price: 100,
+         imgPath: './src/assets/img/menu/lulya.jpg',
+         options: [
+            {
+               title: 'Лепёшка',
+               price: 40,
+               count: 0,
+               value: 0,
+            },
+            {
+               title: 'Лепёшка (половина)',
+               price: 20,
+               count: 0,
+               value: 0,
+            },
+         ]
+      },{          
+         title: 'Люля-кебаб куриный',
+         weight: '120 г',
+         description: 'Курица, лук, хлеб, специи',
+         price: 100,
          imgPath: './src/assets/img/menu/lulya.jpg',
          options: [
             {
@@ -239,7 +307,7 @@ const mainmenu = {
          title: 'Шашлык из говядины',
          weight: '120 г',
          description: 'Кусочки говядины, специи',
-         price: 145,
+         price: 120,
          imgPath: './src/assets/img/menu/bbqgovyadina.jpg',
          options: [
             {
@@ -260,7 +328,7 @@ const mainmenu = {
          title: 'Шашлык из баранины',
          weight: '120 г',
          description: 'Кусочки баранины, специи',
-         price: 145,
+         price: 120,
          imgPath: './src/assets/img/menu/bbqbaranina.jpg',
          options: [
             {
@@ -278,8 +346,9 @@ const mainmenu = {
          ]
       },
       {          
-         title: 'Овощи на мангале',
-         description: 'Описание блюда',
+         title: 'Шампиньоны на мангале',
+         weight: '150 г',
+         description: 'Шампиньоны, маринад',
          price: 100,
          imgPath: './src/assets/img/icons/serving-dish.png',
       }
@@ -288,9 +357,9 @@ const mainmenu = {
    3: [
       {          
          title: 'Овощная нарезка',
-         weight: '200 г',
+         weight: '300 г',
          description: 'Огурцы, помидоры, лук, болгарский перец, лимон',
-         price: 140,
+         price: 150,
          imgPath: './src/assets/img/icons/serving-dish.png',
          options: [
             {
@@ -311,7 +380,7 @@ const mainmenu = {
          title: 'Шакароб',
          weight: '100 г',
          description: 'Помидоры с луком',
-         price: 90,
+         price: 50,
          imgPath: './src/assets/img/menu/shakarob.jpg',
          options: [
             {
@@ -330,7 +399,7 @@ const mainmenu = {
       },
       {          
          title: 'Салат зелёный',
-         weight: '200 г',
+         weight: '300 г',
          description: 'Помидоры, огурцы, перец болгарский, зелень',
          price: 150,
          imgPath: './src/assets/img/menu/salatzeleniy.jpg',
@@ -353,7 +422,7 @@ const mainmenu = {
          title: 'Соленья ассорти',
          weight: '200 г',
          description: 'Огурцы соленые, помидоры соленые, квашеная капуста, соленый стручковый перец',
-         price: 150,
+         price: 100,
          imgPath: './src/assets/img/icons/serving-dish.png',
          options: [
             {
@@ -406,13 +475,6 @@ const mainmenu = {
          weight: '200 / 1000 мл',
          description: 'Компот из сухофруктов',
          price: 20,
-         imgPath: './src/assets/img/icons/serving-dish.png',
-      },
-      {          
-         title: 'Dausuz',
-         weight: '500 мл',
-         description: 'Вода',
-         price: 50,
          imgPath: './src/assets/img/icons/serving-dish.png',
       },
       {          
