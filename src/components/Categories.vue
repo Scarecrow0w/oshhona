@@ -1,12 +1,13 @@
 <template>
     <div class="flex flex-col justify-between h-72 lg:fixed lg:top-1/3 lg:left-4 categories lg:h-96">
         <div
-        v-for="category in categories"
+        v-for="(category, i) in categories"
         :key="category.name"
         :id="category.name"
         :class="{'active-category': activeCategory === category.name}"
         @mouseover="activeCategory = category.name"
         @mouseleave="activeCategory = ''"  
+        @click="scroll(i)"
         :title="category.title" 
         class="flex border rounded-full shadow-md cursor-pointer border-oshb lg:shadow w-11 h-11 lg:px-2 lg:w-52 group lg:rounded-2xl category lg:h-14">
             <div class="flex items-center justify-center w-full lg:w-1/4">
@@ -24,6 +25,8 @@
 
 
 <script>
+import categories from '../categories'
+
 export default {
     name: 'CategoriesList',
 
@@ -34,41 +37,18 @@ export default {
 
     data() {
         return {
-            categories: [
-                {
-                    name: 'firstCourses',
-                    title: 'Первые блюда',
-                    iconClass: 'icofont-soup-bowl',
-                    iconPath: './src/assets/img/icons/soup.png'
-                },
-                {
-                    name: 'secondCourses',
-                    title: 'Вторые блюда',
-                    iconClass: 'icofont-spoon-and-fork',
-                    iconPath: './src/assets/img/icons/cutlery.png'
-                },
-                {
-                    name: 'bbq',
-                    title: 'Мангал',
-                    iconClass: 'icofont-bbq',
-                    iconPath: './src/assets/img/icons/barbecue.png'
-                },
-                {
-                    name: 'salads',
-                    title: 'Салаты',
-                    iconClass: 'icofont-tomato',
-                    iconPath: './src/assets/img/icons/salad.png'
-                },
-                {
-                    name: 'drinks',
-                    title: 'Напитки',
-                    iconClass: 'icofont-cola',
-                    iconPath: './src/assets/img/icons/tea.png'
-                },
-            ],
+            categories: categories
       }
     },
 
-    methods: {},
+    methods: {
+        scroll(i) {
+            window.scrollBy({
+                top: document.querySelectorAll('.courses-container')[i].getBoundingClientRect().top + document.body.scrollTop - document.querySelector('#site-menu').clientHeight,
+                behavior: 'smooth'
+            });
+        } 
+
+    },
 }    
 </script>

@@ -96,7 +96,7 @@
 </template>
 
 <script>
-import menulist from '/src/menu'
+import menulist from '../menu'
 
 export default {
     name: 'Dishes',

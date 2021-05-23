@@ -11,7 +11,7 @@
             </div>
             <div class="flex">
                 <img src="../assets/img/icons/call.png " alt="call"> 
-                <a href="tel:+79289008706" class="ml-2 no-underline">+7 (928) 900-87-06</a>  
+                <a href="tel:+79289008706" class="ml-2 no-underline hover:text-oshb">+7 (928) 900-87-06</a>  
             </div>
         </div>
         <span class="mt-20 text-gray-300">Индивидуальный предприниматель Бабаев Максат Юсупович, 344045, Ростов-на-Дону, 2-я Масштабная, 51, ИНН 616618592642, рег.номер 319619600052383. Режим работы: с 09:00 до 22:00</span>
